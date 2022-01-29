@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/imdb-app.css}" />
+</head>
+<body>
+	<h3>Error Page</h3>
+	<p>Application encountered an error!</p>
+	<p th:text="${errorMessage}"></p>
+</body>
+</html>

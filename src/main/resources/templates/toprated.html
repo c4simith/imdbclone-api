@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/imdb-app.css}" />
+</head>
+<body>
+	<h3>Top rated titles</h3>
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Rating</th>
+
+		</tr>
+		<tr th:each="title : ${toprated}">
+			<td th:text="${title.primaryTitle}" />
+			<td th:text="${title.averageRating}" />
+		</tr>
+	</table>
+</body>
+</html>
